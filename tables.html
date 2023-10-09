@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      table {
+        width: 60%;
+        margin: auto; /*It centers an element*/
+        font-family: "Raleway", sans-serif;
+        border-collapse: collapse;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      thead tr {
+        background: green;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 1.1rem;
+      }
+
+      th {
+        padding: 1rem;
+        border-bottom: 2px solid #f9ba0b;
+      }
+
+      td {
+        padding: 1rem;
+        border-bottom: 1px solid #808080;
+      }
+
+      tr {
+        transition: all 0.5s ease-in;
+      }
+
+      tr:hover {
+        background: #008000;
+        color: #f5f5f5;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: 2px solid #008000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="6">End of Term Results</th>
+        </tr>
+        <tr>
+          <!-- Table headings -->
+          <th>ID</th>
+          <th>Name</th>
+          <th>Math</th>
+          <th>Eng</th>
+          <th>Chem</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Calton Korir</td>
+          <td>87</td>
+          <td>76</td>
+          <td>65</td>
+          <td>B+</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>John Doe</td>
+          <td>90</td>
+          <td>87</td>
+          <td>65</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Will Bones</td>
+          <td>54</td>
+          <td>21</td>
+          <td>75</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Winnie Ogit</td>
+          <td>54</td>
+          <td>61</td>
+          <td>75</td>
+          <td>B-</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Thika Juja</td>
+          <td>88</td>
+          <td>75</td>
+          <td>45</td>
+          <td>A-</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
