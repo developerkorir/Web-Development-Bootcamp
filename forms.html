@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      form {
+        width: 30%;
+        margin: auto;
+        box-shadow: #0000003d 0px 3px 8px;
+        padding: 25px 16px;
+        font-family: "Raleway", sans-serif;
+      }
+
+      /* div {
+        display: flex;
+        width: 100%;
+      } */
+      input {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 10px 12px;
+        box-sizing: border-box;
+        border: 1px solid #36f689;
+      }
+
+      input:focus {
+        outline: none;
+        border: 1px solid #008000;
+      }
+
+      button {
+        width: 100%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background: #05a736d0;
+        color: whitesmoke;
+        border: none;
+        transition: background 0.4s ease-in;
+      }
+
+      button:hover {
+        background: #02611ff1;
+      }
+
+      @media screen and (max-width: 600px) {
+        form {
+          width: 90%;
+        }
+      }
+
+      @media screen and (601px <= width <= 896px) {
+        form {
+          width: 60%;
+        }
+      }
+
+      /* Style the form icons */
+      /* .icon {
+        padding: 10px;
+        background: dodgerblue;
+        color: white;
+        min-width: 50px;
+        text-align: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- Name, email, DOB, Password, Weight -->
+    <form action="">
+      <div>
+        <label for="">Names:</label>
+        <!-- <i class="fa fa-user icon"></i> -->
+        <input type="text" required minlength="6" placeholder="John Doe" />
+      </div>
+      <div>
+        <label for="">Email:</label>
+        <!-- <i class="fa fa-envelope icon"></i> -->
+        <input type="email" placeholder="username@domain.domain" />
+      </div>
+      <div>
+        <label for="">DOB:</label>
+        <input type="date" min="1990/01/01" max="2006/31/12" />
+      </div>
+      <div>
+        <label for="">Password:</label>
+        <input type="password" placeholder="******" />
+      </div>
+      <div>
+        <label for="">Weight</label>
+        <input type="number" placeholder="58" />
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
